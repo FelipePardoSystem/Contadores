@@ -1,0 +1,56 @@
+contador = 0
+agua = 600	
+azucar = 1200
+aceite = 1500
+arroz	= 1250
+fideos = 790
+bebida = 1780
+chocolate	= 2500
+pan_molde	= 1340
+
+print('Por favor seleccione a continuacion los productos que desea añadir a la lista de compras')
+confirmacion=input(f'Desea agregar Agua? Si/No.')
+if confirmacion == 'Si':
+  c_agua = int(input('Cuantas unidades de agua desea llevar?'))
+  contador = contador + (agua*c_agua)
+confirmacion=input(f'Desea agregar azucar? Si/No.')
+if confirmacion == 'Si': 
+  c_azucar = int(input('Cuantas unidades de azucar desea llevar?'))
+  contador = contador + (azucar*c_azucar)
+confirmacion=input(f'Desea agregar aceite? Si/No.')
+if confirmacion == 'Si':
+  c_aceite = int(input('Cuantas unidades de aceite desea llevar?'))
+  contador = contador + (aceite*c_aceite)
+confirmacion=input(f'Desea agregar Arroz? Si/No.')
+if confirmacion == 'Si':
+  c_arroz = int(input('Cuantas unidades de arroz desea llevar?'))
+  contador = contador + (aceite*c_aceite)
+confirmacion=input(f'Desea agregar Fideos? Si/No')
+if confirmacion == 'Si':
+  c_fideos = int(input('Cuantas unidades de fideos desea llevar?'))
+  contador = contador + (fideos*c_fideos)
+confirmacion=input(f'Desea agregar Bebida? Si/No')
+if confirmacion == 'Si':
+  c_bebida = int(input('Cuantas bebidas desea llevar?'))
+  contador = contador + (bebida*c_bebida)
+confirmacion=input(f'Desea agregar Chocolates? Si/No')
+if confirmacion == 'Si':
+  c_chocolate = int(input('Cuantos chocolates desea llevar?'))
+  contador = contador + (chocolate*c_chocolate)
+confirmacion=input(f'Desea agregar Pan de molde? Si/No')
+if confirmacion == 'Si':
+  c_pan_molde = int(input('Cuantas bolsas de pan de molde desea llevar?'))
+  contador = contador + (pan_molde*c_pan_molde)
+
+preferencial = input('El cliente es catalogado como Preferencial? Si/No')
+if preferencial== 'Si':
+  print(f'El total de la compra es {contador*0.25}')
+else:
+  print(f'El total de la compra es {contador}')
+
+Efectivo=int(input('Ingrese el efectivo con el que desea cancelar'))
+vuelto= Efectivo - contador
+if SEfectivo < contador :
+  print('¡Dinero insuficiente, guardias!')
+else:
+  print(f'Usted hizo una compra con el valor de : {contador} su vuelto es {vuelto}')
